@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Decipher | Decifrador de Segredos</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <header class="cabecalho">
+            <h1 class="titulo-cabecalho">Decipher</h1>
+            <nav>
+                <ul>
+                    <li class="lista-cabecalho"><a href="https://github.com/andersongmu" target="_blank"><img class="github-logo" src="imagens/github-logo.png" alt="Github"></a></li>
+                    <li class="lista-cabecalho"><a href="https://www.linkedin.com/in/andersongmu/" target="_blank"><img class="linkedin-logo" src="imagens/linkedin-logo.png" alt="Linkedin"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="conteudo-principal">
+        <div>
+            <fieldset class="conteudo-texto">
+                <textarea type="text" id="entrada-texto" placeholder="Digite seu texto" required></textarea>
+                <div class="aviso">
+                    <img  class="exclamacao" src="imagens/alert.png">
+                    <p class="instrucao">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="btn-entrada">
+                    <button onclick="criptografar()" id="criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" id="descriptografar">Descriptografar</button>
+                </div>
+            </fieldset>
+            <fieldset class="conteudo-saida">
+                <div>
+                    <textarea readonly type="text" id="resultado" placeholder="Nenhuma mensagem encontrada."></textarea>
+                </div>
+                <div class="btn-saida">
+                    <button id="copiar">Copiar</button>
+                </div>
+            </fieldset>
+        </div>
+        </main>
+
+        <footer class="rodape">
+        <h3>Desenvolvido por: Anderson Roberto da Silva</h3>
+        </footer>
+
+<script src="script/script.js"></script>
+
+</body>
+
+
+</html>
